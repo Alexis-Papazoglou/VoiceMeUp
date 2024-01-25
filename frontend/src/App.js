@@ -15,6 +15,7 @@ function App() {
   const [modelList, setModelList] = useState([])
   const [isVoiceUsed, setIsVoiceUsed] = useState(false);
   const [isTextUsed, setIsTextUsed] = useState(false);
+  const [responseText, setResponseText] = useState('')
 
   const API = `https://voicemeapi.onrender.com` || 'http://localhost:3001'
 
@@ -75,6 +76,7 @@ function App() {
       })
       const data = await res.json()
       setAudioURL(data.buffers)
+      setResponseText(data.text)
       setRequestProgress('finished')
     } catch (error) {
       throw error
@@ -97,6 +99,7 @@ function App() {
       })
       const data = await res.json()
       setAudioURL(data.buffers)
+      setResponseText(data.text)
       setRequestProgress('finished')
     } catch (error) {
       throw error
@@ -138,7 +141,7 @@ function App() {
             Generate voice TTS
           </button>
         </div>
-        <div>
+        <div className='response-container'>
           <div>
             {requestProgress === 'finished' ? (
               <ReactAudioPlayer
@@ -154,6 +157,10 @@ function App() {
               <p>No request</p>
             ) : null /* Optional: Handle other values as needed */
             }
+          </div>
+          <div className='response-text'>
+            <h3>Response by {model}</h3>
+            <p>{responseText}</p>
           </div>
         </div>
       </div>

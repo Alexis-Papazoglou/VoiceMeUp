@@ -34,7 +34,7 @@ html {
   background-color: white;
   border: 1px solid grey;
   border-radius: 5px;
-  
+  cursor: pointer;
 }
 
 .audio-player{
@@ -84,4 +84,16 @@ html {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.response-text {
+  font-size: 1.2rem;
+  width: 400px;
+}
+
+.response-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
