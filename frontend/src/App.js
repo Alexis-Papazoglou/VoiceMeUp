@@ -158,10 +158,10 @@ function App() {
             ) : null /* Optional: Handle other values as needed */
             }
           </div>
-          <div className='response-text'>
+          {responseText && <div className='response-text'>
             <h3>Response by {model}</h3>
             <p>{responseText}</p>
-          </div>
+          </div>}
         </div>
       </div>
     </div>
