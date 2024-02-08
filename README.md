@@ -1,6 +1,6 @@
 # VoiceMeUp
 
-This application allows users to interact with a chatbot using either text or voice input. The frontend is built with React and the backend is built with Node.js.
+VoiceMeUp is a React and Node.js project utilizing the fakeyou.ts API for realistic voice emulation and ChatGPT API for character-specific responses. Demonstrating proficiency in frontend, backend, and API integration, the app offers users an engaging and technically sophisticated experience with curated famous personalities.
 
 ## Project Structure
 
