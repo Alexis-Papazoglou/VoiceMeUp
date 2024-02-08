@@ -42,6 +42,10 @@ function App() {
     }
   }, [transcript])
 
+  useEffect(() => {
+    setResponseText('');
+  }, [model]);
+
   const handleTextInputChange = (e) => {
     setText(e.target.value);
     if (e.target.value.trim() !== '') {
@@ -113,7 +117,12 @@ function App() {
       <p>Use the input box to see the available models that can answer to you. </p>
       <div className='form-input'>
         {modelList.length === 0 ? (
-          <p>Waiting to fetch the whole model list, until then you can try the default model: Elon Musk (Version 3.0)</p>
+          <div>
+            <p>The API is deployed on render so it might taka some time until the service starts running..</p>
+            <p>Your patience will be worth it, i promise!</p>
+            <h4>Fetching models, Please wait...</h4>
+          </div>
+
         ) : (
           <Autocomplete models={modelList} setModel={setModel}></Autocomplete>
         )}
