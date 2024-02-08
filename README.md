@@ -26,11 +26,12 @@ Located in the `frontend/` directory. It's responsible for the user interface of
 
 1. Clone the repository: `git clone https://github.com/username/project.git`
 2. Navigate to the backend directory: `cd project/backend`
-3. Install the backend dependencies: `npm install`
-4. Start the backend server: `npm start`
-5. In a new terminal, navigate to the frontend directory: `cd ../frontend`
-6. Install the frontend dependencies: `npm install`
-7. Start the frontend server: `npm start`
+3. You need to create a .env file in the root directory of the backend and add your ChatGPT API KEY and the fakeyou Username and Password.
+4. Install the backend dependencies: `npm install`
+5. Start the backend server: `npm start`
+6. In a new terminal, navigate to the frontend directory: `cd ../frontend`
+7. Install the frontend dependencies: `npm install`
+8. Start the frontend server: `npm start`
 
 ## Usage
 
