@@ -98,7 +98,7 @@ function App() {
         },
         body: JSON.stringify({
           model: model,
-          transcript: transcript
+          text: transcript
         })
       })
       const data = await res.json()
