@@ -37,7 +37,7 @@ html {
   cursor: pointer;
 }
 
-.audio-player{
+.audio-player {
   margin: 10px;
   border: 1px solid grey;
   border-radius: 30px;
@@ -55,7 +55,7 @@ html {
 }
 
 .myInput {
-  min-width: 200px;
+  min-width: 300px;
   min-height: 20px;
   padding: 4px;
   border: 1px solid grey;
@@ -66,8 +66,8 @@ html {
   border: 1px solid grey;
   padding: 4px;
   border-radius: 5px;
-  min-width: 200px;
-  min-height: 80px;
+  min-width: 300px;
+  min-height: 100px;
 }
 
 .mySuggestionsContainer {

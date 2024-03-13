@@ -39,7 +39,7 @@ const Autocomplete = ({ models, setModel }) => {
   const renderSuggestion = (suggestion) => <div>{suggestion.title}</div>;
 
   const inputProps = {
-    placeholder: "Search for a model",
+    placeholder: "Search for a model. E.g. Elon Musk",
     value,
     onChange: onChange,
   };
@@ -53,9 +53,9 @@ const Autocomplete = ({ models, setModel }) => {
       renderSuggestion={renderSuggestion}
       inputProps={inputProps}
       theme={{
-        input: 'myInput',
-        suggestionsContainer: 'mySuggestionsContainer',
-        suggestion: 'mySuggestion',
+        input: "myInput",
+        suggestionsContainer: "mySuggestionsContainer",
+        suggestion: "mySuggestion",
       }}
     />
   );
